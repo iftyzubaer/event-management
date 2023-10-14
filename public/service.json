@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/JxTxvGy/Conferences-and-Seminars.jpg",
+        "title": "Conferences and Seminars",
+        "short_description":  "Inspiring Intellectual Gatherings.",
+        "description": "Our professional event management team specializes in orchestrating flawless conferences and seminars that leave a lasting impact. Whether you're hosting a thought-provoking conference or an informative seminar, we handle everything from venue selection and logistics to registration and audio-visual support. We ensure that your event runs smoothly, allowing you to focus on your message and your audience.",
+        "price": 1500
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/8mdLsNB/Trade-Shows-and-Expos.jpg",
+        "title": "Trade Shows and Expos",
+        "short_description": "Exhibit Excellence with Us.",
+        "description": "Elevate your brand's presence at trade shows and expos with our expertise in event management. We take care of every aspect, from booth design and setup to coordinating with vendors. Our goal is to make your participation seamless, allowing you to maximize your return on investment and stand out in a competitive exhibition environment.",
+        "price": 3000
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/fHhqSqw/Team-Building-Workshops.png",
+        "title": "Team Building Workshops",
+        "short_description": "Unite and Excel Together.",
+        "description": "Foster teamwork, boost morale, and enhance productivity with our engaging team building workshops. We design customized activities that cater to your team's unique needs and goals. Through our expert facilitation, your employees will form stronger bonds, improve communication, and develop essential skills that lead to a more cohesive and productive work environment.",
+        "price": 1500
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/Ps29bkH/Product-Launches.jpg",
+        "title": "Product Launches",
+        "short_description": "Elevate Your Brand's Debut.",
+        "description": "Launch your product with a bang, supported by our experienced event management team. We handle all the details, from venue selection and decor to marketing strategies. Our goal is to create a memorable product launch event that generates buzz, excitement, and media attention, ensuring your new product gets the spotlight it deserves.",
+        "price": 2800
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/nrd8csk/Corporate-Meetings.jpg",
+        "title": "Corporate Meetings",
+        "short_description": "Efficient and Effective Meetings.",
+        "description": "Streamline your corporate meetings with our event management services. We offer comprehensive support, including venue arrangements, audio-visual setup, catering, and more. Your meetings will be organized efficiently, providing a conducive environment for productive discussions, decision-making, and collaboration.",
+        "price": 1900
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/g46tqZr/Award-Ceremonies.jpg",
+        "title": "Award Ceremonies",
+        "short_description": "Honoring Excellence in Style.",
+        "description": "Celebrate excellence and recognize achievements with our award ceremony services. We take care of the logistics, stage design, and coordination, ensuring a sophisticated and memorable event. Whether you're honoring employees, partners, or industry leaders, our event management team will make sure it's a night to remember.",
+        "price": 3400
+    }
+]

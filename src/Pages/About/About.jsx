@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="px-14 py-6">
+        <div className="px-2 md:px-14 py-6">
             <h3 className="text-5xl font-bold text-center">About Us</h3>
             <p className="py-4">At Event Manager, we`re in the business of crafting unforgettable corporate events that leave a lasting impression. With a passion for creativity and a commitment to excellence, we`ve earned our reputation as a trusted partner for businesses of all sizes.</p>
             <h3 className="text-3xl font-bold py-4">Why Choose Us?</h3>

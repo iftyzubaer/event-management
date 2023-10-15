@@ -3,11 +3,16 @@ import Root from "../layouts/Root";
 import Home from "../Pages/Home/Home";
 import Tips from "../Pages/Tips/Tips";
 import Terms from "../Pages/Terms/Terms";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Service from "../Pages/Service/Service";
+import Login from "../Pages/Auth/Login";
+import Register from "../Pages/Auth/Register";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -21,6 +26,19 @@ const router = createBrowserRouter([
       {
         path: "/terms",
         element: <Terms></Terms>
+      },
+      {
+        path: "/services/:id",
+        element: <Service></Service>,
+        loader: () => fetch('/service.json')
+      },
+      {
+        path: "/login",
+        element:<Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
       }
     ]
   },

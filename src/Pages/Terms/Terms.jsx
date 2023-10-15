@@ -1,10 +1,10 @@
 const Terms = () => {
     return (
         <div>
-            <div className="px-14 py-6">
+            <div className="px-4 lg:px-14 py-6">
                 <h3 className="text-5xl font-bold text-center">Terms for Event Management</h3>
                 <p className="py-4">Event management involves the planning, organization, and execution of various types of events, from conferences and weddings to festivals and corporate gatherings. Here are some key terms and concepts associated with event management:</p>
-                <ol className="list-decimal px-10">
+                <ol className="list-decimal px-7 lg:px-10">
                     <li><span className="font-bold">Event Planner:</span> A professional or company responsible for overseeing and coordinating all aspects of an event.</li>
                     <li><span className="font-bold">Event Coordinator:</span> An individual responsible for managing the day-to-day details and logistics of an event.</li>
                     <li><span className="font-bold">Event Brief:</span> A document outlining the objectives, scope, and requirements of an event.</li>

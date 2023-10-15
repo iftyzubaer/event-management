@@ -1,9 +1,9 @@
 const Tips = () => {
     return (
-        <div className="px-14 py-6">
+        <div className="px-4 lg:px-14 py-6">
             <h3 className="text-5xl font-bold text-center">Tips for Event Management</h3>
             <p className="py-4">Event management involves planning and executing events of various scales and types, from corporate conferences and weddings to concerts and festivals. Successful event management requires careful organization, attention to detail, and the ability to adapt to unexpected challenges. Here are some tips to help you excel in event management:</p>
-            <ol className="list-decimal px-10">
+            <ol className="list-decimal px-7 lg:px-10">
                 <li><span className="font-bold">Define Your Goals and Objectives:</span> Clearly outline the purpose and goals of the event. What do you want to achieve, and what are the key performance indicators (KPIs) for success?</li>
                 <li><span className="font-bold">Create a Detailed Plan:</span> Develop a comprehensive event plan that includes timelines, budgets, and task assignments. Consider using project management tools or software to help you stay organized.</li>
                 <li><span className="font-bold">Budgeting:</span> Create a realistic budget that covers all expenses, from venue costs and catering to marketing and entertainment. Be prepared for unexpected costs by including a contingency fund.</li>

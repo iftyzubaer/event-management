@@ -10,10 +10,10 @@ const Register = () => {
 
     const handleRegister = e => {
         e.preventDefault()
-        const name = e.target.name.value;
+        const displayName = e.target.displayName.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
+        console.log(displayName, email, password);
 
         createUser(email, password)
             .then(result => {
@@ -39,7 +39,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+                            <input type="text" name="displayName" placeholder="name" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">

@@ -1,12 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext)
+    const { signInUser, signInWithGoogle } = useContext(AuthContext)
+    const navigate = useNavigate()
 
     const handleLogin = e => {
         e.preventDefault()
@@ -17,6 +18,19 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast("Logged In Successfully!");
+                e.target.reset()
+                navigate('/')
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result.user)
                 toast("Logged In Successfully!");
             })
             .catch(error => {
@@ -50,6 +64,7 @@ const Login = () => {
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
+                            <button onClick={handleGoogleSignIn} className="btn btn-ghost mt-3">Google</button>
                         </div>
                     </form>
                 </div>

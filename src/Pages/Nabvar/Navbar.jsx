@@ -31,18 +31,31 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/tips">Tips</NavLink></li>
-                        <li><NavLink to="/terms">Terms</NavLink></li>
+                        {
+                            user &&
+                            <>
+                                <li><NavLink to="/tips">Tips</NavLink></li>
+                                <li><NavLink to="/terms">Terms</NavLink></li>
+                            </>
+                        }
                     </ul>
                 </div>
                 <div className="navbar-end">
                     {
                         user ?
-                        <div>
-                            <span>{user.email}</span>
-                            <Link onClick={handleLogOut} className="btn">Log Out</Link>
-                        </div> :
-                    <Link to="/login" className="btn">Login</Link>
+                            <div className="flex justify-center items-center gap-4">
+                                <span className="flex justify-center items-center gap-3">
+                                    {user.displayName}
+                                    <div className="avatar online">
+                                        <div className="w-16 rounded-full">
+                                            <img src={user.photoURL} />
+                                        </div>
+                                    </div>
+                                </span>
+
+                                <Link onClick={handleLogOut} className="btn">Log Out</Link>
+                            </div> :
+                            <Link to="/login" className="btn">Login</Link>
                     }
                 </div>
             </div>

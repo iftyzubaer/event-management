@@ -23,7 +23,9 @@ const Login = () => {
                 navigate('/')
             })
             .catch(error => {
-                console.log(error);
+                if(error.code === 'auth/user-not-found') {
+                    toast("email doesn't match")
+                }
             })
     }
 

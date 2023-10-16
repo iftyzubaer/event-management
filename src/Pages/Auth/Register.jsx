@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,18 +7,31 @@ import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
 
     const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate()
 
     const handleRegister = e => {
         e.preventDefault()
-        const displayName = e.target.displayName.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(displayName, email, password);
+
+        if(password.length < 6) {
+            toast("The password is less than 6 characters")
+            return
+        }
+        else if(!/[A-Z]/.test(password)) {
+            toast("The password don't have a capital letter")
+            return
+        }
+        else if (!/[!@#$%^&*()_+{}/[\]:;<>,.?~\\-]/.test(password)) {
+            toast("The password don't have a special character")
+            return
+        }
 
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
                 toast("Account Created Successfully!");
+                navigate('/')
 
             })
             .catch(error => {

@@ -1,8 +1,11 @@
-# React + Vite
+# Event Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Event Manager Live web-site](https://swc.rs/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Add at least 5 Project features:
+- Details page is in the private route
+- After login two more section will unlock in the navbar
+- Email and password authentication is available
+- Google Authentication is available too
+- Regex password validation enabled

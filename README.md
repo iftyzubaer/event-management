@@ -1,6 +1,6 @@
 # Event Manager
 
-[Event Manager Live web-site](https://swc.rs/)
+[Event Manager Live web-site](https://sparkly-narwhal-f7a5b4.netlify.app/)
 
 
 ### Add at least 5 Project features:
